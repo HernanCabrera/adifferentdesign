@@ -9,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'A Different Design',
+    title: 'A Different Design - Kristof Orts - Freelance web design in Antwerp',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,6 +22,9 @@ module.exports = {
       { rel: 'stylesheet',href: 'https://fonts.googleapis.com/css?family=Ropa+Sans' }
     ]
   },
+  css: [
+    '~/assets/main.scss'
+  ],
   /*
   ** Customize the progress bar color
   */
