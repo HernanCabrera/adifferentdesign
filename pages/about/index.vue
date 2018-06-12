@@ -1,6 +1,13 @@
 <template>
   <div class="about">
-    <section class="inicio">
+    <section class="inicio d-flex align-items-center">
+      <b-container>
+        <b-row>
+          <b-col cols="12">
+            <h1 class="titulo text-center">ABOUT</h1>
+          </b-col>
+        </b-row>
+      </b-container>
     </section>
     <section class="personal">
       <b-container>
@@ -33,7 +40,7 @@
         <b-row class="mt-5 row-2">
           <b-col cols="12" lg="6">
             <b-row>
-              <b-col cols="12" class="py-3" v-for="paso in primerosTres" :key="paso">
+              <b-col cols="12" class="py-3" v-for="(paso, indice) in primerosTres" :key="paso + indice">
                 <p class="numero">{{ paso.numero }}</p>
                 <h3 class="titulo">{{ paso.titulo }}</h3>
                 <p class="descripcion">{{ paso.descripcion }}</p>
@@ -42,7 +49,7 @@
           </b-col>
           <b-col cols="12" lg="6">
             <b-row>
-              <b-col cols="12" class="py-3" v-for="paso in losRestantes" :key="paso">
+              <b-col cols="12" class="py-3" v-for="(paso, indice) in losRestantes" :key="paso + indice">
                 <p class="numero">{{ paso.numero }}</p>
                 <h3 class="titulo">{{ paso.titulo }}</h3>
                 <p class="descripcion">{{ paso.descripcion }}</p>
@@ -69,7 +76,7 @@
           </b-col>
         </b-row>
         <b-row class="my-5">
-          <b-col v-for="item in disfruta" :key="item" cols="12 d-flex justify-content-center align-items-center flex-column" sm="6" lg="3">
+          <b-col v-for="(item, indice) in disfruta" :key="item + indice" cols="12 d-flex justify-content-center align-items-center flex-column" sm="6" lg="3">
             <img class="img-fluid img" :src="item.url" alt="">
             <p class="titulo mt-2">{{ item.titulo }}</p>
           </b-col>
@@ -157,93 +164,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.about {
-  .inicio {
-    background: url('~/static/about/bgImage6.png');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    height: 50vh;
-    min-height: 440px;
-  }
-  .personal {
-    .img {
-      width: 320px;
-      height: 320px;
-    }
-    .about-me {
-      font-size: 32px;
-    }
-    .texto {
-      font-size: 20px;
-      color: #777;
-      font-weight: 400;
-    }
-  }
-  .cita {
-    background: url('~/static/about/draw.png');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 196px;
-    .texto {
-      font-size: 35px;
-      font-style: italic;
-      font-weight: 300;
-      color: #434343;
-    }
-  }
-  .disfruta {
-    .img {
-      width: 160px;
-      height: 160px;
-    }
-    .row-1 {
-      .titulo {
-        font-size: 18px;
-        color: #737373;
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-    }
-  }
-  .pasos {
-    .row-1 {
-      .titulo {
-        font-weight: 300;
-        font-size: 38px;
-        color: #434343;
-      }
-      .descripcion {
-      }
-    }
-    .row-2 {
-      .numero {
-        font-size: 60px;
-        font-weight: 300;
-        font-style: italic;
-        line-height: 42px;
-        float: left;
-        width: 40px;
-        height: 100%;
-        color: #999;
-      }
-      .titulo {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 18px;
-      }
-      .descripcion {
-
-      }
-    }
-  }
-}
-@media (max-width: 700px) {
-  
-}
-</style>

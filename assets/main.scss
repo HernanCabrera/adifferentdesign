@@ -199,6 +199,146 @@ body {
   }
 }
 
+.about {
+  .inicio {
+    background: url('~/static/about/bgImage6.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    min-height: 440px;
+    .titulo {
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      font-size: 54px;
+    }
+  }
+  .personal {
+    .img {
+      width: 320px;
+      height: 320px;
+    }
+    .about-me {
+      font-size: 32px;
+    }
+    .texto {
+      font-size: 20px;
+      color: #777;
+      font-weight: 400;
+    }
+  }
+  .cita {
+    background: url('~/static/about/draw.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 196px;
+    .texto {
+      font-size: 35px;
+      font-style: italic;
+      font-weight: 300;
+      color: #434343;
+    }
+  }
+  .disfruta {
+    .img {
+      width: 160px;
+      height: 160px;
+    }
+    .row-1 {
+      .titulo {
+        font-size: 18px;
+        color: #737373;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .pasos {
+    .row-1 {
+      .titulo {
+        font-weight: 300;
+        font-size: 38px;
+        color: #434343;
+      }
+      .descripcion {
+      }
+    }
+    .row-2 {
+      .numero {
+        font-size: 60px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 42px;
+        float: left;
+        width: 40px;
+        height: 100%;
+        color: #999;
+      }
+      .titulo {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+      .descripcion {
+
+      }
+    }
+  }
+}
+
+.vistas {
+  .footer {
+    background: #252525;
+    color: #fff;
+    padding: 24px;
+    margin-top: 80px;
+    text-align: center;
+    .col-12 {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .redes-sociales {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      .red {
+        padding: 0 5px;
+        .red-enlace {
+          color: #fff; 
+        }
+      }
+    }
+  }
+  .margen-color {
+    margin-top: 0 !important;
+    background-color: #fff !important;
+    border-bottom: 1px solid #ccc;
+  }
+  .navbar {
+    margin-top: 20px;
+    // background-color: transparent;
+    transition: .3s;
+    .container {
+      background: #fff !important;
+      transition: .3s;
+      .ruta {
+        text-decoration: none;
+        color: #777;
+      }
+      .activo {
+        color: #252525;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .work {
     .inicio {

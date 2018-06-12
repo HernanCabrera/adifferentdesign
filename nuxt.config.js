@@ -1,4 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/adifferentdesign/'
+  }
+} : {}
+
 module.exports = {
+  ...routerBase,
   modules: [
     'bootstrap-vue/nuxt',
 

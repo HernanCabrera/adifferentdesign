@@ -113,13 +113,8 @@ export default {
   methods: {
     onSubmit (evt) {
       evt.preventDefault();
-      // alert(JSON.stringify(this.form));
       this.send = true
     }
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
