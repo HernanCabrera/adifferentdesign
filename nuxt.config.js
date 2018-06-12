@@ -23,7 +23,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Practicando con nuxt http://adifferentdesign.be/' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logo.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'logo.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Abel' },
       { rel: 'stylesheet',href: 'https://fonts.googleapis.com/css?family=Ropa+Sans' }
