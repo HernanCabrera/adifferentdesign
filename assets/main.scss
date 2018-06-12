@@ -119,25 +119,86 @@ body {
     color: #777;
     font-weight: 400;
   }
-  .enlace {
-    background: #4ea2ed;
-    padding: 24px;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 0 none;
-    display: inline-block;
-    border-bottom: 2px solid #466b8c;
-    letter-spacing: 1px;
-    border-radius: 0;
-    text-decoration: none;
+}
+.enlace {
+  background: #4ea2ed;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0 none;
+  display: inline-block;
+  border-bottom: 2px solid #466b8c;
+  letter-spacing: 1px;
+  border-radius: 0;
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+  &:hover {
+    background: #3071a9;
     color: #fff;
-    transition: .3s;
-    &:hover {
-      background: #3071a9;
+    text-decoration: none;
+  }
+}
+
+.contact {
+  .inicio {
+    background: url('~/static/contact/bgImage8.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    min-height: 440px;
+    .titulo {
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      font-size: 54px;
+    }
+  }
+  .contenido {
+    .titulo {
+      font-size: 28px;
+    }
+    .descripcion {
+      font-size: 24px;
+      color: #777;
+      font-weight: 400;
+    }
+  }
+  .contacto {
+    .enlace {
+      padding: 16px;
+      width: 100%;
     }
   }
 }
+
+.work-id {
+  .inicio {
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 70vh;
+    min-height: 580px;
+  }
+  .work {
+    .titulo {
+      border-top: 4px solid #252525; 
+      border-bottom: 1px solid #ccc;
+      font-size: 30px;
+    }
+    .descripcion {
+    }
+    .client {
+      color: #777;
+      font-size: 16px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .work {
     .inicio {

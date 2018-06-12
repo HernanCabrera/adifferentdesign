@@ -27,7 +27,7 @@
           <b-col cols="12" md="8" class="pb-3 pb-md-0 pr-md-2">
             <div class="contenedor-img">
               <img class="img-fluid" src="~/static/work/hajp.png">
-              <nuxt-link to="/" class="hover">
+              <nuxt-link :to="{ name: 'work-id', params: { id: 'hajp' } }" class="hover">
                 <h2 class="trabajo">HAJP</h2>
                 <p class="descripcion">Trendy Interior Webshop</p>
               </nuxt-link>
@@ -36,7 +36,7 @@
           <b-col cols="12" md="4" class="pb-3 pb-md-0 pl-md-2">
             <div class="contenedor-img">
               <img class="img-fluid" src="~/static/work/moatza.png">
-              <nuxt-link to="/" class="hover">
+              <nuxt-link :to="{ name: 'work-id', params: { id: 'moatza' } }" class="hover">
                 <h2 class="trabajo">Moatza</h2>
                 <p class="descripcion">Community Events Website</p>
               </nuxt-link>
@@ -47,7 +47,7 @@
           <b-col cols="12" md="4" class="pb-3 pb-md-0 pr-md-2">
             <div class="contenedor-img">
               <img class="img-fluid" src="~/static/work/skedify.png">
-              <nuxt-link to="/" class="hover">
+              <nuxt-link :to="{ name: 'work-id', params: { id: 'skedify' } }" class="hover">
                 <h2 class="trabajo">Skedify</h2>
                 <p class="descripcion">Online Calendar App</p>
               </nuxt-link>
@@ -56,7 +56,7 @@
           <b-col cols="12" md="8" class="pb-3 pb-md-0 pl-md-2">
             <div class="contenedor-img">
               <img class="img-fluid" src="~/static/work/boonants.png">
-              <nuxt-link to="/" class="hover">
+              <nuxt-link :to="{ name: 'work-id', params: { id: 'boonants' } }" class="hover">
                 <h2 class="trabajo">Boonants</h2>
                 <p class="descripcion">Trendy Shoes Webshop</p>
               </nuxt-link>
@@ -67,7 +67,7 @@
           <b-col cols="12" md="8" class="pb-3 pb-md-0 pr-md-2">
             <div class="contenedor-img">
               <img class="img-fluid" src="~/static/work/pidgon.png">
-              <nuxt-link to="/" class="hover">
+              <nuxt-link :to="{ name: 'work-id', params: { id: 'pidgon' } }" class="hover">
                 <h2 class="trabajo">Pidgon</h2>
                 <p class="descripcion">Social Platform For Basketball</p>
               </nuxt-link>
@@ -76,10 +76,10 @@
           <b-col cols="12" md="4" class="pl-md-2">
             <div class="contenedor-img">
               <img class="img-fluid" src="~/static/work/brussels.png">
-              <nuxt-link to="/" class="hover">
+              <a class="hover">
                 <h2 class="trabajo">Brussels Airlines</h2>
                 <p class="descripcion">Charity Projects Website</p>
-              </nuxt-link>
+              </a>
             </div>
           </b-col>
         </b-row>
