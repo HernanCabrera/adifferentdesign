@@ -24,12 +24,26 @@ module.exports = {
   /*
   ** Headers of the page
   */
+
+ 
+  
   head: {
     title: 'A Different Design - Kristof Orts - Freelance web design in Antwerp',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Practicando con nuxt http://adifferentdesign.be/' }
+      { hid: 'description', name: 'description', content: 'Practicando con nuxt http://adifferentdesign.be/' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: 'https://hernancabrera.github.io/adifferentdesign/' },
+      { name: 'twitter:title', content: 'A Different Design - Kristof Orts - Freelance web design in Antwerp' },
+      { name: 'twitter:description', content: 'A Different Design, Adaptive, responsive web designer & freelancer Kristof Orts based in Antwerp. Kristof Orts is an independent web designer that loves pixels and code. He specializes in creating beautiful websites and great mobile experiences.' },
+      { name: 'twitter:creator', content: 'Kristof Orts - A Different Design' },
+      { name: 'twitter:image', content: 'bgImage7.png' },
+      { property: 'og:title', content: 'A Different Design - Kristof Orts - Freelance web design in Antwerp' },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: 'https://hernancabrera.github.io/adifferentdesign/' },
+      { property: 'og:image', content: 'bgImage7.png' },
+      { property: 'og:description', content: 'A Different Design, Adaptive, responsive web designer & freelancer Kristof Orts based in Antwerp. Kristof Orts is an independent web designer that loves pixels and code. He specializes in creating beautiful websites and great mobile experiences.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'logo.ico' },
