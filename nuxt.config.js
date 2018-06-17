@@ -6,6 +6,15 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 
 module.exports = {
   ...routerBase,
+  generate: {
+    routes: [
+      '/work/hajp',
+      '/work/moatza',
+      '/work/skedify',
+      '/work/boonants',
+      '/work/pidgon'
+    ]
+  },
   modules: [
     'bootstrap-vue/nuxt',
 
